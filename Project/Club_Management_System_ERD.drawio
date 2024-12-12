@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Club Management System ERD" id="0">
+    <mxGraphModel dx="1238" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Users" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;fontSize=16;labelBackgroundColor=none;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="170" y="40" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="user_id (Primary Key)&lt;br&gt;username&lt;br&gt;password&lt;br&gt;email&lt;br&gt;role&lt;br&gt;status&lt;br&gt;created_at&lt;br&gt;updated_at" style="text;html=1;fontSize=14;rounded=0;labelBackgroundColor=none;fontFamily=Verdana;" parent="2" vertex="1">
+          <mxGeometry x="14.375000000000004" y="32.72727272727273" width="215.62500000000003" height="185.45454545454544" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Members" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;fontStyle=1;labelBackgroundColor=none;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="450" y="40" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="member_id (Primary Key)&lt;br&gt;user_id (Foreign Key)&lt;br&gt;name&lt;br&gt;phone&lt;br&gt;membership_status&lt;br&gt;join_date&lt;br&gt;created_at&lt;br&gt;updated_at" style="text;html=1;fontSize=14;labelBackgroundColor=none;fontFamily=Verdana;" parent="4" vertex="1">
+          <mxGeometry x="14.375000000000004" y="32.72727272727273" width="215.62500000000003" height="185.45454545454544" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Activities" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;fontStyle=1;labelBackgroundColor=none;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="450" y="340" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="activity_id (Primary Key)&lt;br&gt;title&lt;br&gt;description&lt;br&gt;start_date&lt;br&gt;end_date&lt;br&gt;location&lt;br&gt;max_participants&lt;br&gt;fee&lt;br&gt;status&lt;br&gt;created_by (Foreign Key)&lt;br&gt;created_at&lt;br&gt;updated_at" style="text;html=1;fontSize=14;labelBackgroundColor=none;fontFamily=Verdana;" parent="6" vertex="1">
+          <mxGeometry x="14.375000000000004" y="26.36430830039526" width="215.62500000000003" height="187.27636363636358" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="ActivityRegistrations" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;fontStyle=1;labelBackgroundColor=none;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="730" y="340" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="registration_id (Primary Key)&lt;br&gt;activity_id (Foreign Key)&lt;br&gt;member_id (Foreign Key)&lt;br&gt;registration_date&lt;br&gt;attendance_status&lt;br&gt;payment_status&lt;br&gt;fee_id (Foreign Key)&lt;br&gt;created_at&lt;br&gt;updated_at" style="text;html=1;fontSize=14;labelBackgroundColor=none;fontFamily=Verdana;" parent="8" vertex="1">
+          <mxGeometry x="13.855421686746988" y="26.36363636363636" width="216.14457831325308" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="Fees" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;verticalAlign=top;fontStyle=1;labelBackgroundColor=none;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="730" y="40" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="fee_id (Primary Key)&lt;br&gt;member_id (Foreign Key)&lt;br&gt;amount&lt;br&gt;fee_type&lt;br&gt;payment_status&lt;br&gt;payment_date&lt;br&gt;description&lt;br&gt;order_id&lt;br&gt;created_at&lt;br&gt;updated_at" style="text;html=1;fontSize=14;labelBackgroundColor=none;fontFamily=Verdana;" parent="10" vertex="1">
+          <mxGeometry x="14.375000000000004" y="32.72727272727273" width="215.62500000000003" height="185.45454545454544" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Messages" style="rounded=1;html=1;fontSize=16;verticalAlign=top;fontStyle=1;whiteSpace=wrap;labelBackgroundColor=none;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="170" y="340" width="230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="message_id (Primary Key)&lt;br&gt;sender_id (Foreign Key)&lt;br&gt;recipient_id (Foreign Key)&lt;br&gt;subject&lt;br&gt;content&lt;br&gt;sent_date&lt;br&gt;read_status&lt;br&gt;parent_message_id (Foreign&amp;nbsp;&lt;div&gt;Key)&lt;br&gt;is_reply&lt;br&gt;created_at&lt;br&gt;updated_at&lt;/div&gt;" style="text;html=1;fontSize=14;labelBackgroundColor=none;fontFamily=Verdana;" parent="12" vertex="1">
+          <mxGeometry x="14.375000000000004" y="26.37" width="204.12500000000003" height="198.19" as="geometry" />
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;fontSize=14;labelBackgroundColor=none;fontColor=default;fontFamily=Verdana;" parent="1" source="4" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;fontSize=14;labelBackgroundColor=none;fontColor=default;fontFamily=Verdana;" parent="1" source="8" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;fontSize=14;labelBackgroundColor=none;fontColor=default;fontFamily=Verdana;" parent="1" source="8" target="10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;fontSize=14;labelBackgroundColor=none;fontColor=default;fontFamily=Verdana;" parent="1" source="10" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;html=1;fontSize=14;labelBackgroundColor=none;fontColor=default;fontFamily=Verdana;" parent="1" source="12" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uz1LlQeZLrt0XfXVch2s-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;fontFamily=Verdana;" edge="1" parent="1" source="8" target="4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="370" as="sourcePoint" />
+            <mxPoint x="660" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="845" y="310" />
+              <mxPoint x="565" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

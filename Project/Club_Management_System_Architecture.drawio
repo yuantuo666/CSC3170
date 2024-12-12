@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Club Management System Architecture" id="0">
+    <mxGraphModel dx="891" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="&lt;b&gt;Frontend&lt;/b&gt;&lt;br&gt;Next.js 13 (JavaScript)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Verdana;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="300" y="90" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="&lt;b&gt;Backend&lt;/b&gt;&lt;br&gt;Flask 3.0.0 (Python)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Verdana;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="300" y="220" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="&lt;b&gt;Authentication&lt;/b&gt;&lt;br&gt;Session-based" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Verdana;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="90" y="360" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="&lt;b&gt;Database&lt;/b&gt;&lt;br&gt;MySQL 8.0.33" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Verdana;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="300" y="360" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="&lt;b&gt;Payment&lt;/b&gt;&lt;br&gt;QR Code (Mock)" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Verdana;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="510" y="360" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9rZzJFb2FvkCrXJeCUN1-11" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Verdana;fontStyle=0" edge="1" parent="1" source="3" target="2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="411" y="344" as="sourcePoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9rZzJFb2FvkCrXJeCUN1-12" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Verdana;fontStyle=0" edge="1" parent="1" source="4" target="3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint" />
+            <mxPoint x="450" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="330" />
+              <mxPoint x="400" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9rZzJFb2FvkCrXJeCUN1-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Verdana;fontStyle=0" edge="1" parent="1" source="5" target="3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="290" as="sourcePoint" />
+            <mxPoint x="400" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9rZzJFb2FvkCrXJeCUN1-14" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Verdana;fontStyle=0" edge="1" parent="1" source="6" target="3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="290" as="sourcePoint" />
+            <mxPoint x="400" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="330" />
+              <mxPoint x="400" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
