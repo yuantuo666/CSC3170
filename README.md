@@ -37,7 +37,7 @@ Learning resources about CSC3170: Database Systems, 2024 Fall @ CUHK-Shenzhen.
 
 ## Target
 
-Different from previous course, more focus on what is inside the **DBMS**. 
+Different from the previous course, there is more focus on what is inside the **DBMS**.
 
 ## Contents
 
@@ -63,7 +63,7 @@ Different from previous course, more focus on what is inside the **DBMS**.
    2. SQL writing.
    3. Background knowledge, e.g., why we use B+Tree, why we use hash table, etc.
    4. File storage details, e.g., storage page structure, page/tuple layout, etc.
-   5. Storage models's definition/advantage/disadvantage.
+   5. Storage models' definitions/advantages/disadvantages.
    6. Compression.
    7. Processing models.
 2. **Do** tests on:
@@ -75,10 +75,10 @@ Different from previous course, more focus on what is inside the **DBMS**.
    6. Dynamic hash table.
    7. Buffer management: clock replacement policy (4%).
 3. General reviews:
-   1. Many concepts introduced in the course, but not tested, more focus on computation part. Also understanding matters.
-   2. Cheating paper actually did not help much, since many stuff requires understanding.
-   3. Not that deep as CMU's course, so make sure you listen/read all lectures and slides.
-   4. Its kind of misleading for the review lecture by TA team, since they only cover around 30% of the course, and half of the introduced part is not tested.
+   1. Many concepts are introduced in the course but not tested, with more focus on the computation part. Understanding also matters.
+   2. The cheat sheet actually did not help much, since many topics require understanding.
+   3. Not as deep as CMU's course, so make sure you attend/read all lectures and slides.
+   4. It's kind of misleading for the review lecture by the TA team, since they only cover around 30% of the course, and half of the introduced content is not tested.
 
 # References
 
