@@ -12,7 +12,7 @@ Learning resources about CSC3170: Database Systems, 2024 Fall @ CUHK-Shenzhen.
 - [95/100] [HW2](./hw2/CSC3170_Assignment2.pdf): -5 for hash table insert order. Tuples calculation + I/O calculation + Hash table + Page replacement algorithm.
 - [?/100] [HW3](./hw3/CSC3170_Assignment3.pdf): Merge Algorithm + Join Algorithm + B+Tree implementation.
 - [100/100] [Final Project](./Project/Project-CSC3170.pdf): Database management system design + implementation + demo + report.
-- [71/100] [Final Exam](./Final/final-review.pdf): See comments below.
+- [71/100] [Final Exam](./Final/final-review.pdf): See comments below. Distribution: min=14, max=92, median=59.
 
 # Course Information
 
